@@ -1,0 +1,56 @@
+m:root {
+    --theme-color: #285685;
+    --font-color: #ffc765;
+    --shade1: rgba(242, 38, 19, 0.5);
+    --shade2: rgba(0, 255, 255, 0.5);
+}
+
+body {
+    background-color: White;
+    font-family: Chaucer;
+    color: var(--font-color);
+
+    display: flex;
+    justify-content: center;
+}
+
+.textCont {
+    font-size: 100%;
+
+    margin-top: 10%;
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 100%;
+    height: 100%;
+}
+
+div.textCont::after {
+    content: "|";
+    animation: blinky 0.1s linear infinite;
+}
+
+@keyframes blinky {
+    0% {
+        opacity: 0;
+    }
+    49.9% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    99.9% {
+        opacity: 1;
+    }
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    right: 5%;
+    position: absolute;
+}
+.pause {
+    cursor: pointer;
+}

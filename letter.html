@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>untolcoding</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=VT323"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="textCont"></div>
+    <div class="song">
+      <div class="title"></div>
+      <div class="pause" onclick="toggleplay()"></div>
+      <div class="player">
+        <audio
+          class="audio"
+          src="song.mp3"
+          autoplay
+          type="audio"
+          loop=""
+        ></audio>
+      </div>
+    </div>
+    <script src="untoldcoding.js"></script>
+    <script>
+      var pause = document.querySelector(".pause");
+      var audio = document.querySelector(".audio");
+
+      function toggleplay() {
+        if (audio.paused) {
+          audio.play();
+          pause.innerHtml = "🔇";
+        } else {
+          audio.pause();
+          pause.innerHTml = "🔉";
+          pause.style.color = " #848484";
+        }
+      }
+    </script>
+    <script src="new.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@ const text =
 
 const paragraph = text.split("");
 
-let i = 0;
+let i = 5;
 
 
 function dashOut(arr) {

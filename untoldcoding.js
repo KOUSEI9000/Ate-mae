@@ -29,7 +29,7 @@ function dashOut(arr) {
     }
 
     function startFromBegin() {
-        i = 0;
+        i = 5;
         dashOut(paragraph);
     }
 

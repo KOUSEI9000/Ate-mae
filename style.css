@@ -26,7 +26,7 @@ body {
 
 div.textCont::after {
     content: "|";
-    animation: blinky 1s linear infinite;
+    animation: blinky 5s linear infinite;
 }
 
 @keyframes blinky {

@@ -3,7 +3,7 @@ const text =
 
 const paragraph = text.split("");
 
-let i = 5;
+let i = 0;
 
 
 function dashOut(arr) {
@@ -29,7 +29,7 @@ function dashOut(arr) {
     }
 
     function startFromBegin() {
-        i = 5;
+        i = 0;
         dashOut(paragraph);
     }
 
